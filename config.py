@@ -5,22 +5,22 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "21140176")
+    API_HASH  = os.environ.get("API_HASH", "b081ec8da8cf5263a6593041c1ae2a3b")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8416344037:AAFbuPcxzUI_MSKw_C8kKNhfoo1TSRjPqlw") 
    
     # database config
-    DATABASE_NAME = os.environ.get("DATABASE_NAME","")     
-    DATABASE_URL  = os.environ.get("DATABASE_URL","")
+    DATABASE_NAME = os.environ.get("DATABASE_NAME","Rename-Bot-2GB")     
+    DATABASE_URL  = os.environ.get("DATABASE_URL","mongodb+srv://gouravbolange_db_user:yos9d73FCsyLpiI6@cluster0.wxnzgc0.mongodb.net/?retryWrites=true&w=majority&Rename-Bot-2GB=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    START_PIC   = os.environ.get("START_PIC", "https://i.ibb.co/LdT5fdJY/photo-2025-08-13-01-12-38-7537871916074270724.jpg")
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6222491731').split()]
 
     # channels logs
-    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "-1003096722799") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003168773809"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
