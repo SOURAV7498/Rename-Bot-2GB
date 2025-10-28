@@ -10,8 +10,8 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "8416344037:AAFbuPcxzUI_MSKw_C8kKNhfoo1TSRjPqlw") 
    
     # database config
-    DATABASE_NAME = os.environ.get("DATABASE_NAME","Rename-Bot-2GB")     
-    DATABASE_URL  = os.environ.get("DATABASE_URL","mongodb+srv://gouravbolange_db_user:yos9d73FCsyLpiI6@cluster0.wxnzgc0.mongodb.net/?retryWrites=true&w=majority&Rename-Bot-2GB=Cluster0")
+    DATABASE_NAME = os.environ.get("DATABASE_NAME","RenameBot2GB")     
+    DATABASE_URL  = os.environ.get("DATABASE_URL","mongodb+srv://gouravbolange_db_user:yos9d73FCsyLpiI6@cluster0.wxnzgc0.mongodb.net/?retryWrites=true&w=majority&RenameBot2GB=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
