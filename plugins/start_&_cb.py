@@ -15,7 +15,7 @@ async def start(client, message):
         InlineKeyboardButton('♻️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/Movieroll_Chat')],
         [InlineKeyboardButton('❤️‍🩹 About', callback_data='about'),
         InlineKeyboardButton('🛠️ Help', callback_data='help')],
-        [InlineKeyboardButton("👨‍💻 Developer 🧑‍💻", url='https://t.me/@Movieroll_Owner')]
+        [InlineKeyboardButton("👨‍💻 Developer 🧑‍💻", url='https://t.me/Movieroll_Owner')]
     ])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button, quote=True)       
@@ -35,7 +35,7 @@ async def cb_handler(client, query: CallbackQuery):
                 InlineKeyboardButton('♻️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/Movieroll_Chat')],
                 [InlineKeyboardButton('❤️‍🩹 About', callback_data='about'),
                 InlineKeyboardButton('🛠️ Help', callback_data='help')],
-                [InlineKeyboardButton("👨‍💻 Developer 🧑‍💻", url='https://t.me/@Movieroll_Owner')]
+                [InlineKeyboardButton("👨‍💻 Developer 🧑‍💻", url='https://t.me/Movieroll_Owner')]
             ])
         )
     elif data == "help":
